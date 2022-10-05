@@ -16,7 +16,7 @@ There are 3 types of text-based games:
 2. Choice-based games: The player issues commands by choosing from a given list.
 3. Hypertext-based games: The player issues commands by pointing to the words in the state description.
 
-In this project, we will play a parser-based game: The Coin Collector game available in the [Textworld Learning Environment](https://arxiv.org/abs/1806.11532))
+In this project, we will play a parser-based game: The Coin Collector game available in the [Textworld Learning Environment](https://arxiv.org/abs/1806.11532)
 
 ### The Coin Collector Game
 **Objective:** The objective of the game is to collect a coin. The player starts at some random room in every episode. It has to then navigate through the different rooms and finally retrieve the coin. The player gets a score of 1 on collecting the game. For all other steps, no score is given. At every step of the game, the player issues a command and based on it, the state of the game changes. The command is of the form \[VERB, NOUN\]. E.g., some example commands are “go north”, “take coin”, etc.
