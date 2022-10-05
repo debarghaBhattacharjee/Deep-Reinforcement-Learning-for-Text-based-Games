@@ -22,6 +22,7 @@ In this project, we will play a parser-based game: The Coin Collector game avail
 **Objective:** The objective of the game is to collect a coin. The player starts at some random room in every episode. It has to then navigate through the different rooms and finally retrieve the coin. The player gets a score of 1 on collecting the game. For all other steps, no score is given. At every step of the game, the player issues a command and based on it, the state of the game changes. The command is of the form \[VERB, NOUN\]. E.g., some example commands are “go north”, “take coin”, etc.
 
 **Levels:** *Level* refers to optimal trajectory’s length of the game. E.g., L5 means a optimal trajectory has 5 rooms.
+
 **Mode:** There are 3 modes dependding on the difficulty-
 - *Easy*- A map with no distractor rooms.
 - *Medium*- A map with 1 distractor room added at random.
@@ -43,26 +44,26 @@ Here are some of the results of different experiments:
 #### Performance in L5 Easy game
 In the following figures, the performance is represented in terms of the average reward the respective Agent achieves in 100 epochs of the game.
 **Random Agent**
-![Random Agent](images/results/easy-game-random.png)
+<img src="images/results/easy-game-random.png" alt="Random Agent" width=60% height=40%>
 
 **LSTM-DQN Agent**
-![LSTM-DQN Agent](images/results/easy-game-dqn.png)
+<img src="images/results/easy-game-dqn.png" alt="LSTM-DQN Agent" width=60% height=40%>
 
 **LSTM-DQN Agent with Cumulative Counting Bonus**
-![LSTM-DQN Agent with Cumulative Counting Bonus](images/results/easy-game-dqn+.png)
+<img src="images/results/easy-game-dqn+.png" alt="LSTM-DQN Agent with Cumulative Counting Bonus" width=60% height=40%>
 
 **LSTM_DQN with Episodic Discovery Bonus**
-![LSTM-DQN Agent with Episodic Discovery Bonus](images/results/easy-game-dqn++.png)
+<img src="images/results/easy-game-dqn++.png" alt="LSTM-DQN Agent with Episodic Discovery Bonus" width=60% height=40%>
 
 #### Transfer Learning Experiment Results
 **LSTM-DQN Agent**
-![LSTM-DQN Agent](images/results/easy-game2-dqn-transfer_learning.png)
+<img src="images/results/easy-game2-dqn-transfer_learning.png" alt="LSTM-DQN Agent" width=60% height=40%>
 
 **LSTM-DQN Agent with Cumulative Counting Bonus**
-![LSTM-DQN Agent with Cumulative Counting Bonus](images/results/easy-game2-dqn+-transfer_learning.png)
+<img src="images/results/easy-game2-dqn+-transfer_learning.png" alt="LSTM-DQN Agent with Cumulative Counting Bonus" width=60% height=40%>
 
 **LSTM_DQN with Wpisodic Discovery Bonus**
-![LSTM-DQN Agent with Episodic Discovery Bonus](images/results/easy-game2-dqn++-transfer_learning.png)
+<img src="images/results/easy-game2-dqn++-transfer_learning.png" alt="LSTM-DQN Agent with Episodic Discovery Bonus" width=60% height=40%>
 
 
 
