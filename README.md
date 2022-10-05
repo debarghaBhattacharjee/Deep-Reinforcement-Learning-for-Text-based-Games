@@ -40,10 +40,10 @@ Specifically, we try out the following expriments-
 2. Transfer learning experiments: Training a pre-trained RL-agent on an unseen L5 Easy game and comparing the performance against a completely new Rl-agent on the same game.
 
 
-### Results
+## Results
 Here are some of the results of different experiments:
 
-#### Performance in L5 Easy game
+### Performance in L5 Easy game
 In the following figures, the performance is represented in terms of the average reward the respective Agent achieves in 100 epochs of the game.
 
 **Random Agent**
@@ -62,7 +62,7 @@ In the following figures, the performance is represented in terms of the average
 
 <p><img src="images/results/easy-game-dqn++.png" alt="LSTM-DQN Agent with Episodic Discovery Bonus" width=50% height=30%></p>
 
-#### Transfer Learning Experiment Results
+### Transfer Learning Experiment Results
 **LSTM-DQN Agent**
 <p><img src="images/results/easy-game2-dqn-transfer_learning.png" alt="LSTM-DQN Agent" width=50% height=30%></p>
 
@@ -74,8 +74,11 @@ In the following figures, the performance is represented in terms of the average
 
 <p><img src="images/results/easy-game2-dqn++-transfer_learning.png" alt="LSTM-DQN Agent with Episodic Discovery Bonus" width=50% height=30%></p>
 
-
-
+## References
+Following are some of the papers I referred to while implementing this project. I would recommend you also read these papers for more information.
+1. [Language Understanding for Text-based Games Using Deep Reinforcement Learning](https://arxiv.org/abs/1506.08941)
+2. [Counting to Explore and Generalize in Text-based Games](https://arxiv.org/abs/1806.11525)
+3. [TextWorld: A Learning Environment for Text-based Games](https://arxiv.org/abs/1806.11532)
 
 
 
