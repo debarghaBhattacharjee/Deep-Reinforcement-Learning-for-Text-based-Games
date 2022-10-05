@@ -48,7 +48,7 @@ In the following figures, the performance is represented in terms of the average
 
 **Random Agent**
 
-<p><img src="images/results/easy-game-random.png" alt="Random Agent" width=80% height=60%></p>
+<p style="text-align:center; clear:left;"><img src="images/results/easy-game-random.png" alt="Random Agent" width=60% height=40%></p>
 
 **LSTM-DQN Agent**
 
