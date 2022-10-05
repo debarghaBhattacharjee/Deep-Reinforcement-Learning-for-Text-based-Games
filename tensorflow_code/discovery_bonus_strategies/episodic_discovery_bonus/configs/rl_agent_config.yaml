@@ -1,0 +1,62 @@
+init:
+    general:
+        agent_name: "rl_agent"
+        seed: 1997
+        epochs: 200 # 10
+        max_vocab_size: 100000
+        log_dir: "logs/rl_agent"
+        model_dir: "models/rl_agent"
+        verbose: True
+        logging_frequency: 5 #5
+        model_saving_frequency: 10 #10 # 100        
+
+    model:
+        lstm_dqn:
+            general:
+                name: "lstm_dqn"
+                seed: 1997
+                load_saved_model: False # Set to False when don't want to load already saved model.
+                saved_model_path: ""
+            layers:
+                embedding_input_dim: 100000 # Equal to max. size of vocabulary.
+                embedding_hidden_dim: 20 # Equal to dim. of embediing vector.
+                lstm_hidden_dim: 100 
+                shared_mlp_hidden_dim: 64
+                verb_scorer_perceptron_hidden_dim: 64
+                noun_scorer_perceptron_hidden_dim: 64
+
+            optimizer:
+                step_rule: 'Adam'
+                learning_rate: 0.001
+
+training:
+    mode: "training"
+
+    scheduling:
+         max_episodes: 50
+         max_steps: 100
+         bonus_coefficient: 1.0 
+         discount: 0.5
+         replay_frequency: 5
+         minibatch_size: 64 # 64
+         target_update_frequency: 500 # 100
+         min_replay_memory_size: 100 # Min. size of replay memory to start training (100).
+    
+    replay_memory:
+         capacity: 100000  # adjust this depending on your RAM size
+         priority_fraction: 0.25
+
+    exploration:
+        epsilon_init: 1.0
+        epsilon_min: 0.2
+        epsilon_decay_rate: 0.98
+
+testing:
+    mode: "testing"
+
+    scheduling:
+        max_episodes: 50
+        max_steps: 100
+
+    exploration:
+        epsilon_init: 0.05

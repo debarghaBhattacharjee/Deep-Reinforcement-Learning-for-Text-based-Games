@@ -1,0 +1,15 @@
+init:
+    general:
+        agent_name: "random_agent"
+        seed: 1997
+        epochs: 100
+        log_dir: "logs/random_agent"
+        logging_frequency: 5
+        verbose: True
+
+testing:
+    mode: "testing"
+
+    scheduling:
+        max_episodes: 30
+        max_steps: 50

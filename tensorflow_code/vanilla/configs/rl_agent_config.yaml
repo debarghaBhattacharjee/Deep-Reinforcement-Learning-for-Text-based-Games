@@ -1,0 +1,65 @@
+init:
+    general:
+        agent_name: "rl_agent"
+        seed: 1997
+        epochs: 100 # 100
+        max_vocab_size: 100000
+        log_dir: "logs/rl_agent"
+        model_dir: "models/rl_agent"
+        verbose: True
+        logging_frequency: 5
+        model_saving_frequency: 10 # 100        
+
+    model:
+        lstm_dqn:
+            general:
+                name: "lstm_dqn"
+                seed: 1997
+                load_saved_model: True # Set to False when don't want to load already saved model.
+                saved_model_path: "models/rl_agent_coin_collector_l5_easy_2_created_on-08-30-2020_23-10-29_mode-testing/epoch-99_avg_reward-1.0_avg_steps-5.0_avg_wins-1.0_training_epsilon-0.27629164388535654"
+            layers:
+                embedding_input_dim: 100000 # Equal to max. size of vocabulary.
+                embedding_hidden_dim: 20 # Equal to dim. of embediing vector.
+                lstm_hidden_dim: 100 
+                shared_mlp_hidden_dim: 64
+                verb_scorer_perceptron_hidden_dim: 64
+                noun_scorer_perceptron_hidden_dim: 64
+
+            optimizer:
+                step_rule: 'Adam'
+                learning_rate: 0.001
+
+training:
+    mode: "training"
+
+    scheduling:
+         max_episodes: 30
+         max_steps: 50 
+         discount: 0.9
+         replay_frequency: 4 
+         minibatch_size: 64 # 64
+         target_update_frequency: 2 # 100
+         min_replay_memory_size: 100 # Min. size of replay memory to start training (100).
+    
+    replay_memory:
+         capacity: 100000  # adjust this depending on your RAM size
+         priority_fraction: 0.25
+
+    exploration:
+        epsilon_init: 1.0
+        epsilon_min: 0.2
+        epsilon_decay_rate: 0.999984
+
+    optimizer:
+        step_rule: 'RMSprop'
+        learning_rate: 0.001
+
+testing:
+    mode: "testing"
+
+    scheduling:
+        max_episodes: 30
+        max_steps: 50
+
+    exploration:
+        epsilon_init: 0.05
