@@ -43,6 +43,7 @@ Here are some of the results of different experiments:
 
 #### Performance in L5 Easy game
 In the following figures, the performance is represented in terms of the average reward the respective Agent achieves in 100 epochs of the game.
+
 **Random Agent**
 <img src="images/results/easy-game-random.png" alt="Random Agent" width=60% height=40%>
 
