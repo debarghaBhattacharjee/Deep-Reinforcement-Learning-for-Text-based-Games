@@ -33,6 +33,8 @@ In this project, we play Level 5 games of Easy and Medium difficulties.
 ## Training an RL-agent to Play the Coin Collector Game
 We train an RL-agent based on the LSTM-DQN architecture proposed by [Narsimhan et al., 2015](https://arxiv.org/abs/1506.08941). Additionally, we also leverage the discovery bonus strategies (*Cumulative Counting Bonus*, *Episodic Discovery Bonus*) discussed in [Yuan et al., 2018](https://arxiv.org/abs/1806.11525) to improve the promote training-stage exploration. This should ideally help the RL-agent to quickly converge to the optimal winning policy by efficientl exploration of the state space.
 
+<p style="text-align:center;"><img src="images/background/lstm_dqn.png" alt="LSTM-DQN Architecture" width=40% height=60%></p>
+
 Specifically, we try out the following expriments-
 1. Playing a L5 Easy game with Random agent (baseline), Vanilla LSTM-DQN (DQN+), LSTM-DQN with Cumulative Discovery Bonus (DQN+), LSTM-DQN with Episodic Discovery Bonus (DQN++).
 2. Transfer learning experiments: Training a pre-trained RL-agent on an unseen L5 Easy game and comparing the performance against a completely new Rl-agent on the same game.
