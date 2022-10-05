@@ -45,26 +45,32 @@ Here are some of the results of different experiments:
 In the following figures, the performance is represented in terms of the average reward the respective Agent achieves in 100 epochs of the game.
 
 **Random Agent**
-<img src="images/results/easy-game-random.png" alt="Random Agent" width=60% height=40%>
+
+<p style="text-align:center;"><img src="images/results/easy-game-random.png" alt="Random Agent" width=60% height=40%></p>
 
 **LSTM-DQN Agent**
-<img src="images/results/easy-game-dqn.png" alt="LSTM-DQN Agent" width=60% height=40%>
+
+<p style="text-align:center;"><img src="images/results/easy-game-dqn.png" alt="LSTM-DQN Agent" width=60% height=40%></p>
 
 **LSTM-DQN Agent with Cumulative Counting Bonus**
-<img src="images/results/easy-game-dqn+.png" alt="LSTM-DQN Agent with Cumulative Counting Bonus" width=60% height=40%>
+
+<p style="text-align:center;"><img src="images/results/easy-game-dqn+.png" alt="LSTM-DQN Agent with Cumulative Counting Bonus" width=60% height=40%></p>
 
 **LSTM_DQN with Episodic Discovery Bonus**
-<img src="images/results/easy-game-dqn++.png" alt="LSTM-DQN Agent with Episodic Discovery Bonus" width=60% height=40%>
+
+<p style="text-align:center;"><img src="images/results/easy-game-dqn++.png" alt="LSTM-DQN Agent with Episodic Discovery Bonus" width=60% height=40%></p>
 
 #### Transfer Learning Experiment Results
 **LSTM-DQN Agent**
-<img src="images/results/easy-game2-dqn-transfer_learning.png" alt="LSTM-DQN Agent" width=60% height=40%>
+<p style="text-align:center;"><img src="images/results/easy-game2-dqn-transfer_learning.png" alt="LSTM-DQN Agent" width=60% height=40%></p>
 
 **LSTM-DQN Agent with Cumulative Counting Bonus**
-<img src="images/results/easy-game2-dqn+-transfer_learning.png" alt="LSTM-DQN Agent with Cumulative Counting Bonus" width=60% height=40%>
+
+<p style="text-align:center;"><img src="images/results/easy-game2-dqn+-transfer_learning.png" alt="LSTM-DQN Agent with Cumulative Counting Bonus" width=60% height=40%></p>
 
 **LSTM_DQN with Wpisodic Discovery Bonus**
-<img src="images/results/easy-game2-dqn++-transfer_learning.png" alt="LSTM-DQN Agent with Episodic Discovery Bonus" width=60% height=40%>
+
+<p style="text-align:center;"><img src="images/results/easy-game2-dqn++-transfer_learning.png" alt="LSTM-DQN Agent with Episodic Discovery Bonus" width=60% height=40%></p>
 
 
 
